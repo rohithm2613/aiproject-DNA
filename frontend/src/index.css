@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0B0F19;
+    color: #F3F4F6;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232E47;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Card glass / surface utility */
+.dna-card {
+  background-color: #111827;
+  border: 1px solid #1F293D;
+  border-radius: 0.75rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dna-card:hover {
+  border-color: #2D3D5E;
+}
+
+.dna-input {
+  background-color: #0E1424;
+  border: 1px solid #232E47;
+  color: #F3F4F6;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.875rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dna-input:focus {
+  outline: none;
+  border-color: #8B5CF6;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+.dna-input::placeholder {
+  color: #6B7280;
+}
+
